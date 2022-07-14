@@ -10,20 +10,47 @@ export const WrapperInfoUser = styled.div`
   flex-direction: column;
   aling-items: flex-start;
   justify-content: space-between;
-  height: auto;
   margin-left: 10px;
+  height: 200px;
+
+  h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: bold;
+  }
 `
 
 export const WrapperStatusCount = styled.div`
   display: flex;
   aling-items: center;
+  div {
+    margin: 10px;
+    text-aling: center;
+  }
 `
 
 export const WrapperUsername = styled.div`
   display: flex;
   aling-items: center;
+  margin-top: 10px;
+  
   h3 {
     margin-right: 10px;
+  }
+
+  a {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
   }
 `
 
