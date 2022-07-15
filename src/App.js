@@ -1,18 +1,20 @@
 import React from 'react'
 import Layout from './components/layout'
 import Profile from './components/profile/'
-import { ResetCSS } from './global/resetCSS'
 import Repositories from './components/repositories'
-import Starred from './components/repositories'
+import { ResetCSS } from './global/resetCSS'
+import GithubProvider from './providers/githubProvider'
 
 const App = () => {
   return (
     <main>
-      <ResetCSS />
-      <Layout>
-        <Profile />
-        <Repositories />
-      </Layout>
+      <GithubProvider>
+        <ResetCSS />
+        <Layout>
+          <Profile />
+          <Repositories />
+        </Layout>
+      </GithubProvider>
     </main>
   )
 }
