@@ -28,7 +28,12 @@ const GithubProvider = ({ children }) => {
   })
 
   const getUser = username => {
-    api.get(`users/${username}`).then(({ data: { user } }) => {
+    api.get(`users/${username}`).then(( {data} ) => 
+    {
+      console.log('======================');
+      console.log('data:'+ JSON.stringify(data));
+      console.log('======================');
+/* 
       setGithubState(prevState => ({
         ...prevState,
         user: {
@@ -43,7 +48,7 @@ const GithubProvider = ({ children }) => {
           public_gists: user.public_gists,
           public_repos: user.public_repos
         }
-      }))
+      })) */
     })
   }
 
