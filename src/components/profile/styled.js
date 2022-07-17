@@ -19,7 +19,7 @@ export const WrapperInfoUser = styled.div`
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
 
@@ -38,18 +38,18 @@ export const WrapperStatusCount = styled.div`
   }
 `
 
-export const WrapperUsername = styled.div`
+export const WrapperUserGeneric = styled.div`
   display: flex;
   aling-items: center;
   margin-top: 10px;
-  
+
   h3 {
     margin-right: 10px;
   }
 
   a {
     color: green;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
 `
