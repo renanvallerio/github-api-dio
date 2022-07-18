@@ -1,6 +1,14 @@
 # Github API
 
-## Projeto criado usando api pública do github
+## Projeto criado usando api pública do github:
+<br>
+
+<div aling="center">
+  <img src="./public/github-Interface.png" alt="foto do projeto" height="">
+</div>
+
+<br>
+<br>
 
 # Getting Started with Create React App
 
