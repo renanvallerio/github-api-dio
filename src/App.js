@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from './components/layout'
-//
-import Profile from './components/profile/index'
+import NoSearch from './components/no-search'
+import Profile from './components/profile'
 import Repositories from './components/repositories/index'
 import useGithub from './hooks/githubHooks'
 
@@ -10,18 +10,18 @@ const App = () => {
   return (
     <Layout>
       {githubState.hasUser ? (
-      <>
-        {githubState.loading ? (
-          <p>LOADING...</p>
-        ) : (
-          <>
-            <Profile />
-            <Repositories />
-          </>
-        )}
-      </>
-    ) : ( 
-      <div>Nenhum usuario pesquisado</div>
+        <>
+          {githubState.loading ? (
+            <p>LOADING...</p>
+          ) : (
+            <>
+              <Profile />
+              <Repositories />
+            </>
+          )}
+        </>
+      ) : (
+        <NoSearch />
       )}
     </Layout>
   )
